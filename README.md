@@ -38,3 +38,6 @@ Credit: https://aws.amazon.com/blogs/machine-learning/use-the-built-in-amazon-sa
 An supervised approach using XGBoost and a Linear Learner model.  Hyperparameter tuning would be used in order to tune the model further. Identify / predict based on any input transaction whether it is classified as fraud or not fraud. 
 
 
+# End Goal
+The goal is to predict fraudulent transactions.
+

@@ -37,6 +37,19 @@ Credit: https://aws.amazon.com/blogs/machine-learning/use-the-built-in-amazon-sa
 
 An supervised approach using XGBoost and a Linear Learner model.  Hyperparameter tuning would be used in order to tune the model further. Identify / predict based on any input transaction whether it is classified as fraud or not fraud. 
 
+# Data Cleanup
+Fraudlent transactions are only happening on CASH_OUT and TRANSFER
+Consider skipping / dropping PAYMENT
+
+Dropping these fields as they don't contain data that will help the model
+- nameOrig
+- nameDest
+- isFlaggedFraud might not be accurate - consider making a new column for >$200K
+
+Overwriting the TYPE column with numeric values
+  TRANSFER = 0
+  CASH_OUT = 1
+  PAYMENT = 2
 
 # End Goal
 The goal is to predict fraudulent transactions.
